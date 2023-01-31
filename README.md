@@ -1,14 +1,14 @@
 # Scoop Bucket Template
 
 <!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/m75c/scoop-heap/actions/workflows/ci.yml/badge.svg)](https://github.com/m75c/scoop-heap/actions/workflows/ci.yml) [![Excavator](https://github.com/m75c/scoop-heap/actions/workflows/excavator.yml/badge.svg)](https://github.com/m75c/scoop-heap/actions/workflows/excavator.yml)
 
 Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
 How do I install these manifests?
 ---------------------------------
 
-To add this bucket, run `scoop bucket add <bucketname> https://github.com/<username>/<bucketname>`. To install, do `scoop install <manifest>`.
+To add this bucket, run `scoop bucket add heap https://github.com/m75c/scoop-heap`. To install, do `scoop install <manifest>`.
 
 How do I contribute new manifests?
 ----------------------------------
