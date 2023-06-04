@@ -6,14 +6,10 @@
     "url": "https://downloads.sourceforge.net/project/keepass/KeePass%202.x/2.54/KeePass-2.54.zip",
     "hash": "sha1:ccb7c723ba6fdc8ba098d7d436dc1558fee4f5d3",
     "pre_install": [
-        "@('Plugins', 'Languages')|ForEach-Object {",
-        "    if (Test-Path \"$persist_dir\\$_\") {",
-        "        Copy-Item \"$persist_dir\\$_\\*\" -Destination \"$dir\\$_\" -Recurse -Force",
-        "    }",
-        "}",
+        "$config_default = '<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Configuration xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n</Configuration>'",
         "@('KeePass.config.xml', 'KeePass.config.enforced.xml') | ForEach-Object {",
         "    if (!(Test-Path \"$persist_dir\\$_\")) {",
-        "        New-Item \"$dir\\$_\" -ItemType File | Out-Null",
+        "        New-Item \"$dir\\$_\" -ItemType File -Value $config_default | Out-Null",
         "    }",
         "}"
     ],
@@ -26,14 +22,9 @@
     ],
     "persist": [
         "KeePass.config.xml",
-        "KeePass.config.enforced.xml"
-    ],
-    "pre_uninstall": [
-        "@('Plugins', 'Languages')|ForEach-Object {",
-        "    if (Test-Path \"$dir\\$_\") {",
-        "        Copy-Item \"$dir\\$_\\*\" -Destination \"$persist_dir\\$_\" -Recurse -Force",
-        "    }",
-        "}"
+        "KeePass.config.enforced.xml",
+        "Plugins",
+        "Languages"
     ],
     "checkver": {
         "url": "https://keepass.info/update/version2x.txt",
