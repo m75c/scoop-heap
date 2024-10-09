@@ -11,5 +11,6 @@ $pesterConfig = New-PesterConfiguration -Hashtable @{
         Verbosity = 'Detailed'
     }
 }
+echo $PSScriptRoot
 $result = Invoke-Pester -Configuration $pesterConfig
 exit $result.FailedCount
