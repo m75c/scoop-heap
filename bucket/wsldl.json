@@ -1,27 +1,27 @@
 {
-    "version": "25030400",
+    "version": "25031500",
     "description": "Advanced WSL launcher / installer. (Win10 FCU x64/arm64 or later.) ",
     "homepage": "https://git.io/wsldl",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/yuk7/wsldl/releases/download/25030400/wsldl.exe",
-                "https://github.com/yuk7/wsldl/releases/download/25030400/icons.zip#/icons.zip_"
+                "https://github.com/yuk7/wsldl/releases/download/25031500/wsldl.exe",
+                "https://github.com/yuk7/wsldl/releases/download/25031500/icons.zip#/icons.zip_"
             ],
             "hash": [
-                "46ed111413cea360793e6d7148f1af9af1b063d1164d8da7815b813a7b0b9413",
-                "424e015fc0f0c89f5e0f1abfb2c3f03d992552acf2acc7a6b207c8b2b9fef47e"
+                "55ffdb1d1a11a585ac02158dd9711eebc40517ba1fc307c2fd113ec99b19b26f",
+                "2db191c09b378313695933cdf0ceba9a2a32b33f6777efca301086ec623ea4af"
             ]
         },
         "arm64": {
             "url": [
-                "https://github.com/yuk7/wsldl/releases/download/25030400/wsldl_arm64.exe#/wsldl.exe",
-                "https://github.com/yuk7/wsldl/releases/download/25030400/icons_arm64.zip#/icons.zip_"
+                "https://github.com/yuk7/wsldl/releases/download/25031500/wsldl_arm64.exe#/wsldl.exe",
+                "https://github.com/yuk7/wsldl/releases/download/25031500/icons_arm64.zip#/icons.zip_"
             ],
             "hash": [
-                "8c36b511109b26ab406f062e00d3f725714acd8c08aa76a6781ca969f57f2662",
-                "ecdf3ac2ce5397999dee27ad951a4361470730402e0ebec69fcc31be806ac6e4"
+                "9fe5d780deb2434566b86ba9942b71fe5f7c12e20c8d6ef9d0f9c2353b22aba9",
+                "7b67c4643c253d0c395d3da7fbc7f88e745085cb68400ac6977bbd890b5e21d0"
             ]
         }
     },
