@@ -1,7 +1,7 @@
 # Scoop Bucket Template
 
 <!-- Uncomment the following line after replacing placeholders -->
-[![Tests](https://github.com/m75c/scoop-heap/actions/workflows/ci.yml/badge.svg)](https://github.com/m75c/scoop-heap/actions/workflows/ci.yml) [![Excavator](https://github.com/m75c/scoop-heap/actions/workflows/excavator.yml/badge.svg)](https://github.com/m75c/scoop-heap/actions/workflows/excavator.yml)
+<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
 
 Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
@@ -13,9 +13,9 @@ Template bucket for [Scoop](https://scoop.sh), the Windows command-line installe
    - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
    - Select `Allow all actions and reusable workflows`.
    - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
+3. Workflow permissions:
    - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
+   - Ensure `Read repository contents and packages permissions` is selected.
    - Then `Save`.
 4. Document the bucket in `README.md`.
 5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
@@ -30,8 +30,8 @@ Template bucket for [Scoop](https://scoop.sh), the Windows command-line installe
 After manifests have been committed and pushed, run the following:
 
 ```pwsh
-scoop bucket add heap https://github.com/m75c/scoop-heap
-scoop install heap/<manifestname>
+scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
+scoop install <bucketname>/<manifestname>
 ```
 
 ## How do I contribute new manifests?
